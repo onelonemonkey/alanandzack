@@ -1,102 +1,68 @@
-# Astro Netlify Sanity Starter
+# Astro Starter Kit: Blog
 
-![Astro Netlify Sanity Starter](https://assets.stackbit.com/docs/astro-sanity-starter-thumb.jpg)
-
-[Live Demo](https://astro-sanity-starter-demo.netlify.app/)
-
-Netlify Astro and Sanity minimal starter with [visual editing](https://docs.netlify.com/visual-editor/overview/).
-
-| Prerequisites                                                                |
-| :--------------------------------------------------------------------------- |
-| [Node.js](https://nodejs.org/) v18.17.+                                      |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
-
-## Getting Started
-
-Create local project from this repo and run:
-
-```txt
-npm install
+```sh
+npm create astro@latest -- --template blog
 ```
 
-### Sign Into Sanity
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
 
-If you are not already signed into Sanity via the CLI, install the CLI package and then run the login command.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-    npm install -g @sanity/cli
-    sanity login
+![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
 
-This will open a browser and walk you through the authentication process.
+Features:
 
-### Import Content
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
-Once authenticated, you'll be able to create a Sanity project and import content.
+## 🚀 Project Structure
 
-    npm run create-project
+Inside of your Astro project, you'll see the following folders and files:
 
-_Note: You may want to sign into Sanity in the browser and rename your project._
-
-Once the project exists and you've set the environment variables, you can import the content.
-
-    npm run import {projectId}
-
-Replace `{projectId}` with the project ID output from the previous command.
-
-### Store Sanity Values
-
-Sign into Sanity to create an editor token, navigate to the following address (replace the `SANITY_PROJECT_ID` with your project ID) `https://www.sanity.io/manage/personal/project/SANITY_PROJECT_ID/api#tokens`. Then create `.env` file in you repo, copy & paste the following environment variables into the file and set their values.
-
-```plain
-SANITY_PROJECT_ID="..."
-SANITY_DATASET="..."
-SANITY_TOKEN="..."
+```text
+├── public/
+├── src/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
 ```
 
-### Run Sanity Studio
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-Sanity Studio code exists for this project in the `studio` directory. First, install the dependencies in this directory.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-    cd studio
-    npm install
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
-Then create a `.env` file in the `studio` directory with the following environment variables and set their values:
+Any static assets, like images, can be placed in the `public/` directory.
 
-```plain
-SANITY_STUDIO_PROJECT_ID="..."
-SANITY_STUDIO_DATASET="..."
-```
+## 🧞 Commands
 
-Then run the studio locally.
+All commands are run from the root of the project, from a terminal:
 
-    sanity dev
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-If you want to see the content, you can open your browser and navigate to localhost:3333.
+## 👀 Want to learn more?
 
-### Start Development Server
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-Then you can run the Astro.js development server in root directory:
+## Credit
 
-```txt
-npm run dev
-```
-
-Install Netlify Create CLI:
-
-    npm install -g @stackbit/cli
-
-And the Stackbit development server.
-
-    stackbit dev
-
-This outputs your own Netlify Create URL. Open this, register or sign in, and you will be directed to Netlify Create's visual editor for your new project.
-
-## Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify visual editor:
-
-- Learn [how Netlify visual editor works](https://docs.netlify.com/create/concepts/how-create-works/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
-
-## Support
-
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).

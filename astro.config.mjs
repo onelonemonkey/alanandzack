@@ -1,23 +1,10 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import mdx from '@astrojs/mdx';
+
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    image: {
-        domains: ['cdn.sanity.io']
-    },
-    vite: {
-        server: {
-            hmr: { path: '/vite-hmr/' }
-        },
-        optimizeDeps: { exclude: ['fsevents'] }
-    },
-    integrations: [
-        tailwind({
-            applyBaseStyles: false
-        })
-    ],
-    server: {
-        port: 3000
-    }
+	site: 'https://example.com',
+	integrations: [mdx(), sitemap()],
 });
