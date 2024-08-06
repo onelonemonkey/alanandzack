@@ -1,0 +1,14 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+const { slug, title, pubDate, heroImage, postSlug } = Astro.props;
+---
+
+<article>
+  <a href={`/blog/${postSlug}/`}>
+    <img width={720} height={360} src={heroImage} alt="" />
+    <h4 class="title">{title}</h4>
+    <p class="date">
+      <FormattedDate date={pubDate} />
+    </p>
+  </a>
+</article>
