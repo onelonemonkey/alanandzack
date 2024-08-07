@@ -3,7 +3,6 @@ layout: blog
 title: Kitchen Sink HTML
 date: 2024-08-07T11:50:00.000Z
 ---
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
 
 This is a paragraph.
 
