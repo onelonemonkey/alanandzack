@@ -18,7 +18,7 @@ collections:
           required: false,
         }
       - {
-          label: "Featured Image",
+          label: "Thumbnail Image",
           name: "thumbnail",
           widget: "image",
           required: false,
