@@ -2,7 +2,7 @@
 title: Kitchen Sink HTML
 description: A test for html
 pubDate: 2024-08-07T11:50:00.000Z
-heroImage: src/assets/images/kitchen_sink.jpg
+heroImage: ""
 featureImage: ""
 ---
 
