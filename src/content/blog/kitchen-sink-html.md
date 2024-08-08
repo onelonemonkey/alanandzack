@@ -1,8 +1,8 @@
 ---
 title: Kitchen Sink HTML
+description: A test for html
 pubDate: 2024-08-07T11:50:00.000Z
-description: "A test for html"
-heroImage: "/public/tofu.jpg"
+heroImage: src/assets/images/kitchen_sink.jpg
 featureImage: ""
 ---
 
