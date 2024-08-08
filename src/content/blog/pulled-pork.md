@@ -1,25 +1,19 @@
 ---
-layout: blog
 title: Pulled Pork
-date: 2024-08-08T10:50:00.000Z
+pubDate: 2024-08-08T10:50:00.000Z
 ---
+
 Easy Slow Cooker BBQ Pulled Pork
 
 By:Nagi
 
 Published:8 Nov '19Updated:12 Jul '24
 
-
-
 321 Comments
 
 Recipe v Video v Dozer v
 
-
-
 My signature pulled pork recipe is slow roasted for 12 hours. This is my easy pulled pork recipe made in a slow cooker, a recipe loved by readers all around the world! High returns for minimal effort, pork is rubbed with a secret spice mix, slow cooked until the meat pulls apart effortlessly then tossed in a simple-yet-flavour-loaded homemade BBQ Sauce.
-
-
 
 Super economical, makes loads, freezes 100% perfectly and insanely moreish. Make sliders or a big Southern BBQ dinner plate complete with classic sides like Mac and Cheese, Cornbread and Coleslaw!
 
@@ -27,23 +21,13 @@ Close up of Pulled pork with BBQ Sauce
 
 Easy slow cooker pulled pork
 
-
-
 No self respecting BBQ shack would cook pulled pork in a slow cooker. They do an overnight smoke, with a pork babysitter on duty all through the night to stoke the coals, monitor and maintain the temperature, and occasionally give the pork a good spray with their secret-formula spritzer.
-
-
 
 I do not do that.
 
-
-
 I need my beauty sleep.
 
-
-
 (Also, I don’t have a smoker).
-
-
 
 So here’s how I make pulled pork in a slow cooker. Simple. Totally hands off. Makes loads, super economical. Amazing result for minimum effort!
 
@@ -53,11 +37,7 @@ Pulled Pork sliders and pulled pork dinner plate
 
 What you need for pulled pork
 
-
-
 Here’s what you need for pulled pork made in a slow cooker – a spice rub and some kind of liquid for a braising liquid to infuse with flavour, add a touch of sweetness and keep everything nice and moist.
-
-
 
 I like to use beer – any beer other than dark brown beers like stout or Guinness. Apple cider – alcoholic or non alcoholic – or similar fruit ciders (like pear) are also terrific. For non alcoholic, apple juice works really well. Emergency fallback: water!
 
@@ -65,23 +45,15 @@ Slow cooker pulled pork ingredients
 
 Best pork for pulled pork?
 
-
-
 The best pork for pulled pork is bone in Pork Butt – also known as Boston Butt – or pork shoulder. It’s well marbled with fat so it’s juicy, and it’s a tough cut of pork so it needs the long cook time to become tender enough to shred – which means more flavour infusion time!
 
 Difference between pork butt and pork shoulder
-
-
 
 While both are cut from the shoulder of pig, the pork shoulder comes from the lower end (upper leg) whereas pork butt is the upper part near the back which is why the shape is more rectangle block-like. Here’s an excellent diagram from Cooks’ Illustrated!
 
 Homemade barbecue sauce
 
-
-
 And here’s what you need for the homemade Barbecue Sauce. It’s my base recipe for all things barbecue sauced – from pork ribs to chicken, beef ribs to brisket.
-
-
 
 Sometimes I change it up a bit – depends on the protein and purpose of the dish, but fundamentally the same ingredients!
 
@@ -89,27 +61,15 @@ What you need for homemade Barbecue Sauce for pulled pork
 
 How to make pulled pork
 
-
-
 We’re bypassing the step to sit by a smoker through the whole night, and just opting for a simple home version here. So all I need you to do is:
 
+\ rub pork with spice mix;
 
+\ plonk in slow cooker with beer, set and forget;
 
-\    rub pork with spice mix;
+\ brown in oven – optional step, but totally worth it for that extra little edge of flavour (besides, you need to use a pan for shredding anyway, so you may as well throw it in the oven for a bit!);
 
-
-
-\    plonk in slow cooker with beer, set and forget;
-
-
-
-\    brown in oven – optional step, but totally worth it for that extra little edge of flavour (besides, you need to use a pan for shredding anyway, so you may as well throw it in the oven for a bit!);
-
-
-
-\    shred, douse with BBQ sauce, devour.
-
-
+\ shred, douse with BBQ sauce, devour.
 
 How to make pulled pork in slow cooker
 
@@ -127,7 +87,7 @@ How to serve pulled pork
 
 The two classic ways to serve pulled pork are:
 
-1. Sliders – stuffed in soft rolls with Coleslaw*. Terrific way to serve loads of people – this recipe will make around 20 sliders;
+1. Sliders – stuffed in soft rolls with Coleslaw\*. Terrific way to serve loads of people – this recipe will make around 20 sliders;
 
 \* If you or your hips are anti mayo, try the RecipeTin No Mayo Coleslaw – it’s very, very good!
 
