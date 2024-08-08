@@ -1,5 +1,6 @@
 ---
 title: Pulled Pork
+description: "A ripped off pulled pork recipe"
 pubDate: 2024-08-08T10:50:00.000Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Test
+description: "test post"
 pubDate: 2024-08-08T10:55:00.000Z
 ---
 
