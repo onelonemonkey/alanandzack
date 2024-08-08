@@ -1,12 +1,10 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from "../components/layout/BaseHead.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import FoodTruck from "/public/food_truck.jpg";
 import Image from "astro/components/Image.astro";
-import ArticleListCondensed from "../components/blog/ArticleListCondensed.astro";
-import SubHeading from "../components/headings/SubHeading.astro";
 import FromTheBlog from "../components/blog/FromTheBlog.astro";
 ---
 
@@ -21,8 +19,8 @@ import FromTheBlog from "../components/blog/FromTheBlog.astro";
   <body
     class="font-poppins border-t-[2rem] border-t-orange-300 border-b-[4rem] border-b-emerald-200"
   >
+    <Header />
     <div class="container mx-auto">
-      <!-- <Header /> -->
       <main>
         <h1 class="text-8xl mb-4 w-2/3 font-medium pt-12 leading-[5.25rem]">
           <span class="text-6xl font-semibold">Welcome to</span>

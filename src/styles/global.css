@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-normal;
+}
+
 h1 {
   @apply text-7xl font-normal mb-5;
 }
@@ -29,7 +33,7 @@ p {
 
 ul,
 ol {
-  @apply ml-5 mb-5;
+  @apply ml-12 mb-5;
 }
 
 ul {

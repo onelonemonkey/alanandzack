@@ -1,12 +1,12 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
+import { SITE_TITLE } from "../../consts";
 ---
 
 <header class="font-poppins font-bold">
-  <nav>
+  <nav class="container mx-auto flex justify-between">
     <h2><a href="/">{SITE_TITLE}</a></h2>
-    <div class="internal-links">
+    <div class="font-normal">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
     </div>

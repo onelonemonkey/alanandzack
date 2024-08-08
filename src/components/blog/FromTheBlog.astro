@@ -1,7 +1,7 @@
 ---
 import SubHeading from "../headings/SubHeading.astro";
 import { getCollection } from "astro:content";
-import FormattedDate from "../FormattedDate.astro";
+import FormattedDate from "../layout/FormattedDate.astro";
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
