@@ -1,19 +1,8 @@
 ---
 title: Pulled Pork
-description: "A ripped off pulled pork recipe"
+description: A ripped off pulled pork recipe
 pubDate: 2024-08-08T10:50:00.000Z
 ---
-
-Easy Slow Cooker BBQ Pulled Pork
-
-By:Nagi
-
-Published:8 Nov '19Updated:12 Jul '24
-
-321 Comments
-
-Recipe v Video v Dozer v
-
 My signature pulled pork recipe is slow roasted for 12 hours. This is my easy pulled pork recipe made in a slow cooker, a recipe loved by readers all around the world! High returns for minimal effort, pork is rubbed with a secret spice mix, slow cooked until the meat pulls apart effortlessly then tossed in a simple-yet-flavour-loaded homemade BBQ Sauce.
 
 Super economical, makes loads, freezes 100% perfectly and insanely moreish. Make sliders or a big Southern BBQ dinner plate complete with classic sides like Mac and Cheese, Cornbread and Coleslaw!
@@ -88,7 +77,7 @@ How to serve pulled pork
 
 The two classic ways to serve pulled pork are:
 
-1. Sliders – stuffed in soft rolls with Coleslaw\*. Terrific way to serve loads of people – this recipe will make around 20 sliders;
+1. Sliders – stuffed in soft rolls with Coleslaw*. Terrific way to serve loads of people – this recipe will make around 20 sliders;
 
 \* If you or your hips are anti mayo, try the RecipeTin No Mayo Coleslaw – it’s very, very good!
 
