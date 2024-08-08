@@ -24,8 +24,6 @@ collections:
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
-
-collections:
   - name: "recipe" # Used in routes, e.g., /admin/collections/blog
     label: "Recipe" # Used in the UI
     folder: "src/content/recipe" # The path to the folder where the documents are stored
