@@ -14,4 +14,15 @@ const blog = defineCollection({
   }),
 });
 
+const recipe = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    heroImage: z.string().optional(),
+    ingredients: z.array(z.string()),
+    steps: z.array(z.string()),
+  }),
+});
+
 export const collections = { blog };
