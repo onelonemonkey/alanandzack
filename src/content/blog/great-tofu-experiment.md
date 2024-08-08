@@ -1,5 +1,4 @@
 ---
-layout: article
 title: "The Great Tofu Experiment"
 description: "A badly done deep dive into trying to make tofu taste good"
 pubDate: "Jul 08 2022"

@@ -1,6 +1,7 @@
 ---
 title: Kitchen Sink HTML
 pubDate: 2024-08-07T11:50:00.000Z
+description: "A test for html"
 heroImage: "/public/tofu.jpg"
 featureImage: ""
 ---
