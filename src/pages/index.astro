@@ -6,28 +6,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import FoodTruck from "/public/food_truck.jpg";
 import Image from "astro/components/Image.astro";
 import FromTheBlog from "../components/blog/FromTheBlog.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <script
-      type="text/javascript"
-      src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body class="font-poppins py-16">
-    <Header />
-    <div class="container mx-auto">
-      <main>
-        <Image
-          src={FoodTruck}
-          alt="A food truck stuffed with Karaage Chicken"
-          class="mb-12 rounded-md"
-        />
-        <FromTheBlog />
-        <Footer />
-      </main>
-    </div>
-  </body>
-</html>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <Image
+    src={FoodTruck}
+    alt="A food truck stuffed with Karaage Chicken"
+    class="mb-12 rounded-md"
+  />
+  <FromTheBlog />
+</BaseLayout>

@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  @apply text-7xl font-normal mb-5;
+  @apply text-5xl md:text-7xl font-normal mb-5;
 }
 
 h2 {
@@ -28,12 +28,12 @@ h6 {
 }
 
 p {
-  @apply font-extralight mb-4;
+  @apply text-sm md:text-base font-extralight mb-4;
 }
 
 ul,
 ol {
-  @apply ml-12 mb-5;
+  @apply ml-12 mb-5 font-extralight;
 }
 
 ul {
@@ -50,4 +50,32 @@ a {
 
 blockquote {
   @apply border-l-4 border-gray-300 pl-4 italic my-8;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
 }

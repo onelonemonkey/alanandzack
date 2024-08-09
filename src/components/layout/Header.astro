@@ -3,8 +3,8 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../../consts";
 ---
 
-<header class="font-poppins pt-8 mb-8">
-  <nav class="container mx-auto flex justify-between">
+<header class="font-poppins pt-4 mb-8">
+  <nav class="container mx-auto flex justify-between items-center">
     <h1>
       <a href="/">
         <svg
@@ -51,8 +51,12 @@ import { SITE_TITLE } from "../../consts";
         </svg>
       </a>
     </h1>
-    <div class="font-normal">
+    <div class="font-normal flex gap-5">
       <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/recipes">Recipes</HeaderLink>
+      <HeaderLink href="/recipes">Reviews</HeaderLink>
+      <HeaderLink href="/recipes">Rants</HeaderLink>
       <!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
     </div>
   </nav>
