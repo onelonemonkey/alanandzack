@@ -10,15 +10,15 @@ const posts = (await getCollection("blog")).sort(
 <section>
   <SubHeading title="From the blog" />
 
-  <p class="text-2xl font-extralight leading-relaxed mb-8 max-w-prose">
+  <p class="mb-8 max-w-prose">
     As food writers we should probably write stuff, feel free to browse what
     we've been writing about.
   </p>
 
-  <ul class="list-disc ml-12">
+  <ul>
     {
       posts.map((post) => (
-        <li class="text-2xl font-thin">
+        <li>
           <a href={`/blog/${post.slug}/`}>
             <FormattedDate date={post.data.pubDate} /> - {post.data.title}
           </a>

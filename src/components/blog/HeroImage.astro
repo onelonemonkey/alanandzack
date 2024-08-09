@@ -1,9 +1,8 @@
 ---
 const { heroImage, alt } = Astro.props;
-import Image from "astro/components/Image.astro";
 ---
 
 <p>Hero: {heroImage}</p>
 <div>
-  <Image src={heroImage} alt={alt} class="mb-12 rounded-md" />
+  <img src={heroImage} alt={alt} class="mb-12 rounded-md" />
 </div>

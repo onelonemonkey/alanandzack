@@ -61,6 +61,6 @@ collections:
       - { label: "Longitude", name: "longitude", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-media_folder: public/images
-public_folder: /images
+media_folder: "public/images/uploads" # Folder where user uploaded files should go
+public_folder: "/images/uploads"
 site_url: "https://alanandzack.netlify.app/"
