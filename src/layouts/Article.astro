@@ -12,11 +12,13 @@ const { title, description = "", pubDate, heroImage } = Astro.props;
 <BaseLayout title={title} description={description}>
   <article>
     <div>
-      <header>
-        <FormattedDate date={pubDate} />
-        <h1>{title}</h1>
+      <header class="relative">
+        <div class="absolute bg-white p-4 bottom-0 left-0 pr-8">
+          <FormattedDate date={pubDate} />
+          <h2>{title}</h2>
+        </div>
+        {heroImage && <HeroImage heroImage={heroImage} alt="{alt}" />}
       </header>
-      {heroImage && <HeroImage heroImage={heroImage} alt="{alt}" />}
       <div class="max-w-prose">
         <slot />
       </div>
