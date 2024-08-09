@@ -16,19 +16,19 @@ const { title, description = "", pubDate, heroImage } = Astro.props;
     <BaseHead title={title} description={description} />
   </head>
 
-  <body
-    class="font-poppins border-t-[2rem] border-t-orange-300 border-b-[4rem] border-b-emerald-200 pt-12"
-  >
+  <body class="font-poppins">
     <Header />
     <main class="container mx-auto">
       <article>
-        {heroImage && <HeroImage heroImage={heroImage} alt="{alt}" />}
-        <div class="max-w-prose">
+        <div>
           <header>
-            <h1>{title}</h1>
             <FormattedDate date={pubDate} />
+            <h1>{title}</h1>
           </header>
-          <slot />
+          {heroImage && <HeroImage heroImage={heroImage} alt="{alt}" />}
+          <div class="max-w-prose">
+            <slot />
+          </div>
         </div>
       </article>
     </main>
