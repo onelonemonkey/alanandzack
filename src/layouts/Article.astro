@@ -22,7 +22,6 @@ const { title, description = "", pubDate, heroImage } = Astro.props;
     <Header />
     <main class="container mx-auto">
       <article>
-        <p>Article Hero: {heroImage}</p>
         {heroImage && <HeroImage heroImage={heroImage} alt="{alt}" />}
         <div class="max-w-prose">
           <header>
