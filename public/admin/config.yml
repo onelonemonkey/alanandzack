@@ -11,11 +11,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
-      - { label: "Tags",
-          name: "tags",
-          widget: "list",
-          default: ["news"] 
-        }
+      - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
       - {
           label: "Hero Image",
           name: "heroImage",
@@ -23,12 +19,11 @@ collections:
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Author",
-            name: "author",
-            widget: "select",
-            options:
-              - { label: "Alan", value: "alan" },
-              - { label: "Zack", value: "zack" }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "select",
+          options: ["Alan", "Zack"],
         }
   - name: "recipe" # Used in routes, e.g., /admin/collections/blog
     label: "Recipe" # Used in the UI
