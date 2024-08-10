@@ -13,9 +13,9 @@ const { title, description = "", pubDate, heroImage } = Astro.props;
   <article>
     <div>
       <header class="md:relative">
-        <div class="md:absolute bg-white md:p-4 bottom-0 left-0 pr-8">
+        <div class="md:absolute bg-white md:py-4 bottom-0 left-0 md:pr-12">
           <FormattedDate date={pubDate} />
-          <h2>{title}</h2>
+          <h2 class="mb-0">{title}</h2>
         </div>
         {heroImage && <HeroImage heroImage={heroImage} alt="{alt}" />}
       </header>
