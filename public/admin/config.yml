@@ -24,6 +24,7 @@ collections:
           name: "author",
           widget: "select",
           options: ["Alan", "Zack"],
+          default: "Alan",
         }
   - name: "recipe" # Used in routes, e.g., /admin/collections/blog
     label: "Recipe" # Used in the UI
