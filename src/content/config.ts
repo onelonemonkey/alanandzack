@@ -19,6 +19,7 @@ const recipe = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
     ingredients: z.array(z.string()),
     steps: z.array(z.string()),
