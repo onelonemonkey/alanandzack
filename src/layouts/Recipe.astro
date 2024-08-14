@@ -6,7 +6,14 @@ import BaseLayout from "./BaseLayout.astro";
 
 type Props = CollectionEntry<"recipe">["data"];
 
-const { title, description = "", pubDate, heroImage } = Astro.props;
+const {
+  title,
+  description = "",
+  pubDate,
+  heroImage,
+  ingredients,
+  steps,
+} = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -21,8 +28,9 @@ const { title, description = "", pubDate, heroImage } = Astro.props;
       </header>
       <div class="max-w-prose">
         <h3>Ingredients</h3>
-
+        {ingredients}
         <h3>Instructions</h3>
+        {steps}
         <slot />
       </div>
     </div>

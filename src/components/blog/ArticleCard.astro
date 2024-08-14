@@ -1,10 +1,10 @@
 ---
 import FormattedDate from "../layout/FormattedDate.astro";
-const { title, pubDate, heroImage, slug } = Astro.props;
+const { title, pubDate, heroImage, slug, collectionName } = Astro.props;
 ---
 
 <article class="mb-8">
-  <a href={`/blog/${slug}/`} class="inline-block md:relative">
+  <a href={`/${collectionName}/${slug}/`} class="inline-block md:relative">
     <div class="md:absolute bg-white p-4 bottom-0 left-0 pr-8">
       <p class="date mb-0">
         <FormattedDate date={pubDate} />

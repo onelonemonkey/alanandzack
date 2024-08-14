@@ -20,6 +20,7 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "@astropub/md": "^1.0.0",
     "decap-cms-app": "^3.1.11"
   }
 }

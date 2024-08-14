@@ -21,8 +21,8 @@ const recipe = defineCollection({
     description: z.string().optional(),
     pubDate: z.coerce.date(),
     heroImage: z.string().optional(),
-    ingredients: z.array(z.string()),
-    steps: z.array(z.string()),
+    ingredients: z.string(),
+    steps: z.string(),
   }),
 });
 
