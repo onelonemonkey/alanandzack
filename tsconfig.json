@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "jsx": "preserve" // This ensures that TypeScript doesn’t enforce React’s jsx syntax
   }
 }
