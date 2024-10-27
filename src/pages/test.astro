@@ -21,14 +21,55 @@ const { title, description = "" } = Astro.props;
 
   <body class="font-poppins">
     <div class="min-h-screen grid grid-cols-12 h-full">
-      <div class="bg-black p-8 text-slate-50 col-span-5 pt-16">
-        <h1 class="text-8xl">Alan <br />& Zack</h1>
+      <div
+        class="bg-black sticky top-0 p-8 text-slate-50 col-span-5 pt-16 border border-l-8 border-l-orange-400"
+      >
+        <h1 class="text-8xl font-medium">Alan <br />& Zack</h1>
 
         <p class="text-lg font-medium mr-13">
           Ever realised you eat too much, like to eat out, constantly spend
           money on grub and always exploring food? In short that's how we got
           here, we hope you enjoy the ride.
         </p>
+        <nav>
+          <ul class="flex list-none p-0 m-0">
+            <li class="pr-4">
+              <a
+                href=""
+                class="border-b border-b-4 border-spacing-3 transition duration-100 border-b-orange-400 text-white hover:text-white text-lg"
+                >Home</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href=""
+                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+                >Blog</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href=""
+                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+                >Recipes</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href=""
+                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+                >Reviews</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href=""
+                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+                >Booze Pics</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="bg-white col-span-7">
         <Image
