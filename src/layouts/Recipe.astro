@@ -4,8 +4,14 @@ import FormattedDate from "../components/layout/FormattedDate.astro";
 import HeroImage from "../components/blog/HeroImage.astro";
 import BaseLayout from "./BaseLayout.astro";
 
+// Import remark and remark-html to convert markdown
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkHtml from "remark-html";
+
 type Props = CollectionEntry<"recipe">["data"];
 
+// Get the props from Astro
 const {
   title,
   description = "",
@@ -14,6 +20,19 @@ const {
   ingredients,
   steps,
 } = Astro.props;
+
+// Use remark to convert Markdown content to HTML
+async function convertMarkdownToHtml(markdown: string) {
+  const result = await unified()
+    .use(remarkParse)
+    .use(remarkHtml)
+    .process(markdown);
+  return String(result);
+}
+
+// Convert ingredients and steps (recipe) to HTML
+const ingredientsHtml = await convertMarkdownToHtml(ingredients);
+const stepsHtml = await convertMarkdownToHtml(steps);
 ---
 
 <BaseLayout title={title} description={description}>
@@ -24,13 +43,17 @@ const {
           <FormattedDate date={pubDate} />
           <h2 class="mb-0">{title}</h2>
         </div>
-        {heroImage && <HeroImage heroImage={heroImage} alt="{alt}" />}
+        {heroImage && <HeroImage heroImage={heroImage} alt={title} />}
       </header>
       <div class="max-w-prose">
         <h3>Ingredients</h3>
-        {ingredients}
+        <!-- Render the ingredients HTML -->
+        <div class="ingredients" set:html={ingredientsHtml} />
+
         <h3>Instructions</h3>
-        {steps}
+        <!-- Render the steps (recipe) HTML -->
+        <div class="steps" set:html={stepsHtml} />
+
         <slot />
       </div>
     </div>
