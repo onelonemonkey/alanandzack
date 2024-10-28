@@ -107,12 +107,7 @@ const { title, description = "" } = Astro.props;
                 <h2 class="text-black text-3xl">
                   <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
                 </h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Velit iure distinctio excepturi libero harum quo alias,
-                  impedit vero cum itaque? Recusandae expedita, ducimus ipsam
-                  doloribus temporibus cupiditate deserunt esse iure?
-                </p>
+                <p>{post.data.description}</p>
               </article>
             ))
           }
@@ -144,13 +139,9 @@ const { title, description = "" } = Astro.props;
             recipes.map((recipe) => (
               <article class="">
                 <h2 class="text-black text-3xl">
-                  <a href={`/blog/${recipe.slug}/`}>{recipe.data.title}</a>
+                  <a href={`/recipe/${recipe.slug}/`}>{recipe.data.title}</a>
                 </h2>
-                <p>
-                  We might not be trained but we certainly enjoy cooking, why
-                  don't you check out some of our recipes and maybe even try
-                  cooking some?
-                </p>
+                <p>{recipe.data.description}</p>
               </article>
             ))
           }
