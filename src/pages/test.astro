@@ -46,14 +46,14 @@ const { title, description = "" } = Astro.props;
           </li>
           <li class="pr-4">
             <a
-              href="/#blog"
+              href="#blog"
               class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
               >Blog</a
             >
           </li>
           <li class="pr-4">
             <a
-              href="/#recipes"
+              href="#recipes"
               class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
               >Recipes</a
             >
@@ -139,7 +139,7 @@ const { title, description = "" } = Astro.props;
             recipes.map((recipe) => (
               <article class="">
                 <h2 class="text-black text-3xl">
-                  <a href={`/recipes/${recipe.slug}/`}>{recipe.data.title}</a>
+                  <a href={`/recipe/${recipe.slug}/`}>{recipe.data.title}</a>
                 </h2>
                 <p>{recipe.data.description}</p>
               </article>
