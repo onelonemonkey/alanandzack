@@ -6,11 +6,22 @@ import Header from "../components/layout/Header.astro";
 import { ViewTransitions } from "astro:transitions";
 import FoodTruck from "/public/food_truck.jpg";
 import Image from "astro/components/Image.astro";
+import chef from "/public/chef.jpg";
+
+import { getCollection } from "astro:content";
+import FormattedDate from "layout/FormattedDate.astro";
+const posts = (await getCollection("blog")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+
+const recipes = (await getCollection("recipe")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 
 const { title, description = "" } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <BaseHead title={title} description={description} />
     <script
@@ -20,87 +31,146 @@ const { title, description = "" } = Astro.props;
   </head>
 
   <body class="font-poppins">
-    <div class="min-h-screen grid grid-cols-12 h-full">
-      <div
-        class="bg-black sticky top-0 p-8 text-slate-50 col-span-5 pt-16 border border-l-8 border-l-orange-400"
-      >
-        <h1 class="text-8xl font-medium">Alan <br />& Zack</h1>
+    <header
+      class="bg-black bg-opacity-95 text-white fixed top-0 left-0 py-4 p-8 w-full flex justify-between"
+    >
+      <h1 class="font-medium text-lg m-0 p-0">Alan &amp; Zack</h1>
+      <nav>
+        <ul class="flex list-none p-0 m-0">
+          <li class="pr-4">
+            <a
+              href=""
+              class="border-b border-b-4 border-spacing-3 transition duration-100 border-b-orange-400 text-white hover:text-white text-lg"
+              >Home</a
+            >
+          </li>
+          <li class="pr-4">
+            <a
+              href="#blog"
+              class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+              >Blog</a
+            >
+          </li>
+          <li class="pr-4">
+            <a
+              href="#recipes"
+              class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+              >Recipes</a
+            >
+          </li>
+          <li class="pr-4">
+            <a
+              href=""
+              class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+              >Reviews</a
+            >
+          </li>
+          <li class="pr-4">
+            <a
+              href=""
+              class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
+              >Booze Pics</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="min-h-screen bg-[url('/images/chef.jpg')] bg-cover bg-center p-6"
+    >
+    </div>
 
-        <p class="text-lg font-medium mr-13">
-          Ever realised you eat too much, like to eat out, constantly spend
-          money on grub and always exploring food? In short that's how we got
-          here, we hope you enjoy the ride.
-        </p>
-        <nav>
-          <ul class="flex list-none p-0 m-0">
-            <li class="pr-4">
-              <a
-                href=""
-                class="border-b border-b-4 border-spacing-3 transition duration-100 border-b-orange-400 text-white hover:text-white text-lg"
-                >Home</a
-              >
-            </li>
-            <li class="pr-4">
-              <a
-                href=""
-                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
-                >Blog</a
-              >
-            </li>
-            <li class="pr-4">
-              <a
-                href=""
-                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
-                >Recipes</a
-              >
-            </li>
-            <li class="pr-4">
-              <a
-                href=""
-                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
-                >Reviews</a
-              >
-            </li>
-            <li class="pr-4">
-              <a
-                href=""
-                class="hover:border-b hover:border-b-4 border-spacing-3 transition duration-100 hover:border-b-orange-400 text-white hover:text-white text-lg"
-                >Booze Pics</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <section class="min-h-screen grid grid-cols-12 h-full" id="blog">
+      <div
+        class="bg-black text-slate-50 col-span-6 p-16 pb-32 border-t-0 border-l-8 border-l-orange-400"
+      >
+        <div class="sticky top-40">
+          <h2 class="text-8xl font-medium">Blog</h2>
+
+          <p class="text-lg font-medium mr-13">
+            Ever realised you eat too much, like to eat out, constantly spend
+            money on grub and always exploring food? In short that's how we got
+            here, we hope you enjoy the ride.
+          </p>
+        </div>
       </div>
-      <div class="bg-white col-span-7">
+      <div class="bg-white col-span-6">
         <Image
           src={FoodTruck}
           alt="A food truck stuffed with Karaage Chicken"
           class="mb-8"
         />
         <div class="p-6">
-          <h2 class="text-black text-3xl">These are headings</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iure
-            distinctio excepturi libero harum quo alias, impedit vero cum
-            itaque? Recusandae expedita, ducimus ipsam doloribus temporibus
-            cupiditate deserunt esse iure?
-          </p>
-          <h2 class="text-black text-3xl">These are headings</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iure
-            distinctio excepturi libero harum quo alias, impedit vero cum
-            itaque? Recusandae expedita, ducimus ipsam doloribus temporibus
-            cupiditate deserunt esse iure?
-          </p>
-          <h2 class="text-black text-3xl">These are headings</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iure
-            distinctio excepturi libero harum quo alias, impedit vero cum
-            itaque? Recusandae expedita, ducimus ipsam doloribus temporibus
-            cupiditate deserunt esse iure?
+          {
+            posts.map((post) => (
+              <article class="mb-8">
+                <h2 class="text-black text-3xl">
+                  <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Velit iure distinctio excepturi libero harum quo alias,
+                  impedit vero cum itaque? Recusandae expedita, ducimus ipsam
+                  doloribus temporibus cupiditate deserunt esse iure?
+                </p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-screen grid grid-cols-12 h-full" id="recipes">
+      <div
+        class="order-2 bg-black text-slate-50 col-span-6 p-16 border-t-0 border-r-8 border-r-teal-500"
+      >
+        <div class="sticky top-40">
+          <h2 class="text-8xl font-medium">Recipes</h2>
+
+          <p class="text-lg font-medium mr-13">
+            We might not be trained but we certainly enjoy cooking, why don't
+            you check out some of our recipes and maybe even try cooking some?
           </p>
         </div>
       </div>
-    </div>
+      <div class="order-1 bg-white col-span-6">
+        <Image
+          src={FoodTruck}
+          alt="A food truck stuffed with Karaage Chicken"
+          class="mb-8"
+        />
+        <div class="p-6">
+          {
+            recipes.map((recipe) => (
+              <article class="">
+                <h2 class="text-black text-3xl">
+                  <a href={`/blog/${recipe.slug}/`}>{recipe.data.title}</a>
+                </h2>
+                <p>
+                  We might not be trained but we certainly enjoy cooking, why
+                  don't you check out some of our recipes and maybe even try
+                  cooking some?
+                </p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
   </body>
 </html>
+
+<style>
+  h1 {
+    display: block;
+    padding: 0;
+  }
+
+  h1 span {
+    color: white;
+    background: #000;
+    box-shadow: 0 0 0 15px #000;
+    padding: 0;
+    line-height: 1;
+  }
+</style>

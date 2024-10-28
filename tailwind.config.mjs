@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      boxShadow: {
+        "ragged-text": "0 0 0 10px #000",
+      },
     },
   },
   plugins: [],
